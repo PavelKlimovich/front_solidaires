@@ -7279,6 +7279,12 @@ h1, h2, h3, h4, h5,
     color: #fff;
     font-size: 60px; }
 
+.form-login {
+  padding: 1px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: #000000; }
+
 .login-wrap {
   z-index: 1;
   width: 100%;
@@ -7348,6 +7354,18 @@ h1, h2, h3, h4, h5,
   width: 100%;
   color: #fff;
   display: block; }
+
+.form-login textarea {
+  border: none;
+  padding: 1px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid #6c757d;
+  color: #000000; }
+
+.form-login textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #ffb400; }
 
 .login-form .group .input {
   padding: 1px;
