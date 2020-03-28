@@ -378,7 +378,9 @@ h1, h2, h3, h4, h5,
 //////////////// FORM /////////////////////
 
 .login-wrap{
-    width:100%;
+	z-index: 1;
+	width:100%;
+	width: 800px;
 	max-width:450px;
     min-height:550px;
     height: 750px;
@@ -447,7 +449,7 @@ h1, h2, h3, h4, h5,
 	display:block;
 }
 .login-form .group .input{
-    padding: 5px;
+    padding: 1px;
   background: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 2px solid #6c757d; 
@@ -708,3 +710,13 @@ body::-webkit-scrollbar {
 	border-radius: 25px;
 }
 
+#rr{
+	display: none;
+  
+  }
+	.custom-file-input ~ .custom-file-label:lang(fr)::after {
+	content: "Choisir...";
+  }
+  .custom-file-input ~ .custom-file-label:lang(es)::after {
+	content: "Elegir...`";
+  }
