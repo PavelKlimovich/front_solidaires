@@ -751,3 +751,79 @@ body::-webkit-scrollbar {
   .custom-file-input ~ .custom-file-label:lang(es)::after {
 	content: "Elegir...`";
   }
+
+
+
+  @media (min-width: 200px) and (max-width: 991px) {
+	.overlay1 {
+	 height: 350px !important;
+
+	}
+	.hero-wrap1 {
+		
+		height: 200px;
+		
+	}
+  }
+  @media (min-width: 650px) and (max-width: 1100px) {
+	.dashboardLink ul {
+		margin-left: -100px;
+		
+	}
+  }
+  @media (min-width: 300px) and (max-width: 649px) {
+	fa-3x {
+		font-size: 1em;
+	}
+	.m-3 {
+		 margin: 0rem !important; 
+	}
+	  .btn{
+		  font-size: 8px;
+	  }
+	.container-fluid .cardRow {
+		 margin-left: 3vw; 
+		
+	}
+	.ftco-footer-social {
+		
+		width: 300px;
+	}
+	.padding1{
+		padding: 0px;
+	  }
+	  
+	.dashboardLink ul {
+		margin-left: 0px;
+		
+	}
+	.type {
+		font-size: 10px;
+
+	}
+	.grey {
+		
+		font-size: 10px;
+		
+	}
+	.type1 {
+		font-size: 10px;
+
+	}
+	h4, .h4 {
+		font-size: 15px !important;
+	}
+	p{
+		font-size: 10px;
+	}
+  }
+  @media (min-width: 1200px) and (max-width: 1500px) {
+	.type1 {
+		font-size: 14px;
+
+	}
+	.fa-3x {
+		font-size: 1em;
+	}
+  }
+ 
