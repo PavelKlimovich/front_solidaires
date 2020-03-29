@@ -7145,6 +7145,21 @@ a.text-dark:hover, a.text-dark:focus {
           .container-fluid .cardRow .cardAppart .blockBottom div:nth-child(2) p {
             width: 50%; }
 
+.btnRegister {
+  background-color: white;
+  border-radius: 1rem !important; }
+
+.imgCircle {
+  position: relative; }
+  .imgCircle .text-blue {
+    position: absolute;
+    color: blue;
+    top: 15px;
+    right: 15px; }
+  .imgCircle:nth-child(2) .text-blue {
+    top: 15px;
+    right: 40px; }
+
 .blogMenu li {
   margin: 1.2rem; }
 
@@ -7206,7 +7221,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 600; }
 
 .colorwar {
-  color: #ffb400;
+  color: #ffb400 !important;
   line-height: 1.8;
   font-weight: 600; }
 
@@ -7219,12 +7234,18 @@ a.text-dark:hover, a.text-dark:focus {
 .formborder textarea {
   border: 1px solid #ffb400 !important; }
 
+.formborder select {
+  border: 1px solid #ffb400 !important; }
+
 .btnsos {
   padding: 1.1rem;
   border-radius: 10px; }
 
 .radius {
   border-radius: 25px; }
+
+#id-client {
+  cursor: pointer; }
 
 /* The Modal (background) */
 .modal {
@@ -7296,13 +7317,20 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #FEF8EC; }
 
 .modal-body {
-  padding: 2px 16px;
-  border-color: #ffb400; }
+  padding: 2px 16px; }
 
 .modal-footer {
   padding: 2px 16px;
   background-color: #FEF8EC;
   color: white; }
+
+.btnout {
+  background-color: #ffffff00;
+  border: none;
+  outline: 0; }
+
+.btnout:focus {
+  outline: none; }
 
 body {
   font-family: "Poppins", Arial, sans-serif;

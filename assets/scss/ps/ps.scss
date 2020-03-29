@@ -84,7 +84,7 @@ $secondary: #6b76ff;
     font-weight: 600;
   }
   .colorwar{
-    color: $primary;
+    color: $primary !important;
     line-height: 1.8;
     font-weight: 600;
   }
@@ -97,6 +97,9 @@ $secondary: #6b76ff;
   .formborder textarea{
     border: 1px solid $primary !important;
   }
+  .formborder select{
+    border: 1px solid $primary !important;
+  }
   .btnsos{
     padding: 1.1rem;
     border-radius: 10px;
@@ -104,7 +107,9 @@ $secondary: #6b76ff;
   .radius{
     border-radius: 25px;
   }
-
+#id-client{
+  cursor: pointer;
+}
 
 
 
@@ -174,4 +179,13 @@ $secondary: #6b76ff;
   padding: 2px 16px;
   background-color: #FEF8EC;
   color: white;
+}
+.btnout{
+  background-color:#ffffff00 ;
+  border: none;
+  outline: 0;
+}
+.btnout:focus{
+  
+  outline: none;
 }
