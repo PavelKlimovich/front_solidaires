@@ -1,12 +1,17 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
+@import "proprio/proprio";
+@import "ps/ps";
 
 $font-primary: 'Poppins',Arial, sans-serif;
 
 $white: #fff;
 $black: #000000;
 $darken: #232931;
-
+$grey: #6c757d;
+$success: #3F983D;
+$danger: #CE5034;
+$blue: #04148a;
 $primary: #ffb400;
 $secondary: #6b76ff;
 
@@ -242,8 +247,8 @@ h1, h2, h3, h4, h5,
 	
 		.navbar-toggler {
 			border: none;
-			color: rgba(0,0,0,.5)!important;
-			border-color: rgba(0,0,0,.5)!important;
+			color: $primary!important;
+			border-color: $primary!important;
 			cursor: pointer;
 			padding-right: 0;
 			text-transform: uppercase;
@@ -254,9 +259,9 @@ h1, h2, h3, h4, h5,
 		.nav-link {
 			padding-top: .9rem!important;
 			padding-bottom: .9rem!important;
-			color: $black!important;
+			color: $primary!important;
 			&.active {
-				color: $primary!important;
+				color: white!important;
 			}
 		}
 		&.awake {
@@ -298,7 +303,7 @@ h1, h2, h3, h4, h5,
 		bottom: 0;
 		content: '';
 		opacity: .1;
-		background: #303240;
+		background: linear-gradient(to left, #000000, #2a8bb1, #e1e8ec 75%, #eaeaea 75%);
 		height: 1000px;
 		@include media-breakpoint-down(lg){
 			opacity: 0;
@@ -376,12 +381,21 @@ h1, h2, h3, h4, h5,
 
 
 //////////////// FORM /////////////////////
-
+.form-login{
+	
+	padding: 1px;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+   
+    color: #000000;
+}
 .login-wrap{
-    width:100%;
+	z-index: 1;
+	width:100%;
+	width: 800px;
 	max-width:450px;
     min-height:550px;
-    height: 750px;
+    height: 780px;
 	position:relative;
 	border-radius: 25px;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
@@ -446,11 +460,29 @@ h1, h2, h3, h4, h5,
 	color:#fff;
 	display:block;
 }
-.login-form .group .input{
-    padding: 5px;
+.form-login  textarea{
+	border:none;
+    padding: 1px;
   background: rgba(255, 255, 255, 0);
   border: none;
-  border-bottom: 2px solid #6c757d; }
+  border-bottom: 2px solid #6c757d; 
+  color:#000000;}
+
+  .form-login textarea:focus{
+    outline: none; 
+  	border-bottom: 2px solid $primary; }
+  
+.login-form .group .input{
+    padding: 1px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid #6c757d; 
+  color:#000000;}
+
+  .login-form .group .input:focus{
+    outline: none; 
+  border-bottom: 2px solid $primary; 
+  }
 
 .login-form .group .button{
     border:none;
@@ -467,7 +499,7 @@ h1, h2, h3, h4, h5,
 	font-size:14px;
 }
 .login-form .group .button{
-	background:#1161eeab;
+	background:#336cd2ab;
 }
 .login-form .group .button:hover{
 	background:$primary;
@@ -573,7 +605,7 @@ h1, h2, h3, h4, h5,
 			color: $white;
 			margin-bottom: 40px;
 			font-size: 18px;
-			font-weight: 900;
+			font-weight: 500;
 		}
 		ul{
 			li{
@@ -609,19 +641,26 @@ h1, h2, h3, h4, h5,
 		color: $black;
 	}
 }
-
+.icon-footer span {
+	font-size: 35px;
+	
+	a{
+		color: $primary !important;
+	}
+}
 .ftco-footer-social {
+	
+		margin-top: 25px !important;
+		width: 450px;
+	
 	li {
+		
 		list-style: none;
-		margin: 0 10px 0 0;
+		margin: 15px ;
 		display: inline-block;
-		a {
-			height: 50px;
-			width: 50px;
+		a {	
 			display: block;
 			float: left;
-			background: rgba($white, .05);
-			border-radius: 50%;
 			position: relative;
 			span {
 				position: absolute;
@@ -680,11 +719,11 @@ body::-webkit-scrollbar {
   
 
   ::selection  {
-    background: #9c27b0;
+    background: $primary;
     color: #fff
   }
   ::-moz-selection {
-    background: #9c27b0;
+    background: $primary;
     color: #fff
   }
 
@@ -692,4 +731,23 @@ body::-webkit-scrollbar {
 	text-decoration: underline  #ffb400;
    
   
+  }
+
+
+  .btn-warning {
+    color: white;
+    background-color: #ffc107;
+	border-color: #ffc107;
+	border-radius: 25px;
+}
+
+#rr{
+	display: none;
+  
+  }
+	.custom-file-input ~ .custom-file-label:lang(fr)::after {
+	content: "Choisir...";
+  }
+  .custom-file-input ~ .custom-file-label:lang(es)::after {
+	content: "Elegir...`";
   }
