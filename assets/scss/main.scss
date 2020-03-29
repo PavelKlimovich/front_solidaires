@@ -636,19 +636,26 @@ h1, h2, h3, h4, h5,
 		color: $black;
 	}
 }
-
+.icon-footer span {
+	font-size: 35px;
+	
+	a{
+		color: $primary !important;
+	}
+}
 .ftco-footer-social {
+	
+		margin-top: 25px !important;
+		width: 450px;
+	
 	li {
+		
 		list-style: none;
-		margin: 0 10px 0 0;
+		margin: 15px ;
 		display: inline-block;
-		a {
-			height: 50px;
-			width: 50px;
+		a {	
 			display: block;
 			float: left;
-			background: rgba($white, .05);
-			border-radius: 50%;
 			position: relative;
 			span {
 				position: absolute;
