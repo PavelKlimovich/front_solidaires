@@ -7145,6 +7145,21 @@ a.text-dark:hover, a.text-dark:focus {
           .container-fluid .cardRow .cardAppart .blockBottom div:nth-child(2) p {
             width: 50%; }
 
+.btnRegister {
+  background-color: white;
+  border-radius: 1rem !important; }
+
+.imgCircle {
+  position: relative; }
+  .imgCircle .text-blue {
+    position: absolute;
+    color: blue;
+    top: 15px;
+    right: 15px; }
+  .imgCircle:nth-child(2) .text-blue {
+    top: 15px;
+    right: 40px; }
+
 .blogMenu li {
   margin: 1.2rem; }
 
@@ -7296,8 +7311,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #FEF8EC; }
 
 .modal-body {
-  padding: 2px 16px;
-  border-color: #ffb400; }
+  padding: 2px 16px; }
 
 .modal-footer {
   padding: 2px 16px;
