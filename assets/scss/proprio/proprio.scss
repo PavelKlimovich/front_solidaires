@@ -1,7 +1,13 @@
+$white: #fff;
+$black: #000000;
+$darken: #232931;
 $grey: #6c757d;
 $success: #3F983D;
 $danger: #CE5034;
 $blue: #04148a;
+$primary: #ffb400;
+$secondary: #6b76ff;
+
 .proprioHeader {
   display: grid;
   grid-template-columns: 1fr;
@@ -97,6 +103,12 @@ $blue: #04148a;
       }
     }
   }
+
+
+  .cardAppart:hover{
+    box-shadow: 2px 2px 5px $grey;
+    border-radius: 25px;
+}
   .cardRow{
     margin-left: 9vw;
     padding-top: 9vh;

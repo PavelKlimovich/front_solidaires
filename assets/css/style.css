@@ -7052,7 +7052,7 @@ a.text-dark:hover, a.text-dark:focus {
     width: 75%;
     display: flex;
     list-style: none;
-    color: #6c757d;
+    color: #6b76ff;
     justify-content: space-evenly; }
     .container-fluid .dashboardLink ul li a {
       color: #6c757d; }
@@ -7088,6 +7088,10 @@ a.text-dark:hover, a.text-dark:focus {
       box-shadow: none !important;
       background-color: #E89F20 !important;
       border-color: #E89F20 !important; }
+
+.container-fluid .cardAppart:hover {
+  box-shadow: 2px 2px 5px #6c757d;
+  border-radius: 25px; }
 
 .container-fluid .cardRow {
   margin-left: 9vw;
@@ -7129,7 +7133,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: -150px;
   display: flex;
   list-style: none;
-  color: #6c757d;
+  color: #6b76ff;
   justify-content: space-evenly; }
   .dashboardLink ul li {
     padding: 0rem 1rem; }
@@ -7184,6 +7188,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 .margintop {
   margin-bottom: 15rem; }
+
+.formborder input {
+  border: 1px solid #ffb400 !important; }
+
+.formborder textarea {
+  border: 1px solid #ffb400 !important; }
+
+.btnsos {
+  padding: 1.1rem;
+  border-radius: 10px; }
+
+.rsadius {
+  border-radius: 25px; }
 
 body {
   font-family: "Poppins", Arial, sans-serif;

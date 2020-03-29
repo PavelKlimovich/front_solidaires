@@ -1,3 +1,13 @@
+$white: #fff;
+$black: #000000;
+$darken: #232931;
+$grey: #6c757d;
+$success: #3F983D;
+$danger: #CE5034;
+$blue: #04148a;
+$primary: #ffb400;
+$secondary: #6b76ff;
+
 .blogMenu{
 
     li{
@@ -75,4 +85,17 @@
   }
   .margintop{
       margin-bottom: 15rem;
+  }
+  .formborder input{
+    border: 1px solid $primary !important;
+  }
+  .formborder textarea{
+    border: 1px solid $primary !important;
+  }
+  .btnsos{
+    padding: 1.1rem;
+    border-radius: 10px;
+  }
+  .rsadius{
+    border-radius: 25px;
   }
