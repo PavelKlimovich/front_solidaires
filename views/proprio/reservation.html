@@ -87,7 +87,7 @@
                     <h6 class="mb-4 type"> Adresse :</h6>
                     <p> 8e étage avec ascenceur, remis à neuf récemment, toutes commoditiés (machine à laver et sèche-linge)</p>
                   <br>
-                  <h6 class="mb-4 type"> Propriétaire :<span class="grey"> <button class="mb-1 type colorwar btnout" id="myBtn"> Hugo Dupont</button></span></h6>
+                  <h6 class="mb-4 type"> Propriétaire :<span class="grey"> <button class="mb-1 type colorwar btnout" id="myBtn" onclick="modalOpen('Harry Potter','Harry Potter','Harry Potter','Harry Potter')"> Hugo Dupont</button></span></h6>
                   </div>
                   </div>
                    </div>
@@ -125,7 +125,7 @@
                       <h6 class="mb-4 type"> Adresse :</h6>
                       <p> 8e étage avec ascenceur, remis à neuf récemment, toutes commoditiés (machine à laver et sèche-linge)</p>
                     <br>
-                    <h6 class="mb-4 type"> Propriétaire :<span class="grey"> Mme Julie Dupont</span></h6>
+                    <h6 class="mb-4 type"> Propriétaire :<span class="grey" onclick="modalOpen('Harry Potter','GGG','Harry Potter','Harry Potter')"> Mme Julie Dupont</span></h6>
                     </div>
                </div>
                 </div>
@@ -137,20 +137,20 @@
 </div>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal" class="modal">               <!--    ID  myModal  -->
 
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <span class="close">&times;</span>  
+      <span class="close" id="close">&times;</span>  
     </div>
     <div class="modal-body">
       <div class="row mb-3 padding1 m-3">
         <div class="col-md-4 themed-grid-col">
           <div class="row">
             <div class="col-md-10 themed-grid-col mt-4"> 
-              <h6 class="mb-1 type"> Nom : <span class="grey"> Jean</span></h6>
-              <h6 class="mb-1 type"> Prénom :<span class="grey"> Pierre </span></h6>
+              <h6 class="mb-1 type"> Nom : <span class="grey" id="modalName"> </span></h6>
+              <h6 class="mb-1 type"> Prénom :<span class="grey" id="modalFirstname">  </span></h6>
               <br>
           </div>
         </div>
@@ -159,21 +159,22 @@
           <div class="row">
             <div class="col-md-12 themed-grid-col mt-4">
               <h6 class="mb-4 type"> Description :</h6>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam consectetur magni ipsum tempore nostrum quas laborum. Pariatur velit voluptatum, saepe eaque odit voluptatem vitae sequi mollitia accusamus facilis est!</p>
+              <p id="modalAbout"> </p>
             </div>
         </div>
       </div>
         <div class="col-md-4 themed-grid-col mt-4">
           <h6 class="mb-4 type">Pièce d'identité :<span class="grey"> Oui</span></h6>
           <br>
-            <h6 class="mb-4 type"> Justificatif professionnel :<span class="grey"><a href=""> LIEN</a></span></h6> 
+            <h6 class="mb-4 type"> Justificatif professionnel :<span class="grey" id="modalLink"><a href=""> </a></span></h6> 
           </div>
       </div>
     </div>
     <div class="modal-footer">
     </div>
   </div>
-</div>
+  </div>
+  
 
 <footer class="ftco-footer ftco-section">
     <div class="container">
