@@ -63,27 +63,27 @@
 
   
  
-  <div class="container-fluid">
+  <div class="container color-back" style="margin-top:8rem;">
     <div class="col-12">
         <div class="row cardRow">
                 <div class="cardAppart">           
                     <form  action="">
-                        <div class="row mb-4 padding1">
+                        <div class="row mb-4 padding1 p-5">
                             <div class="col-md-6 themed-grid-col marginleft">
                                 <div class="row ">
                                   <form action=" " method="POST">
                                     <div class="col-md-6 themed-grid-col formborder">
                                         <div class="form-group row">
-                                            <label for="example-date-input" class="col-2 col-form-label">De</label>
-                                            <div class="col-10">
+                                            <label for="example-date-input" class="col-lg-2 col-sm-4 col-form-label">De</label>
+                                            <div class="col-lg-10 col-sm-10">
                                               <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                                             </div>
                                           </div>
                                     </div>
                                     <div class="col-md-6 themed-grid-col formborder">
                                         <div class="form-group row">
-                                            <label for="example-date-input" class="col-2 col-form-label">À</label>
-                                            <div class="col-10">
+                                            <label for="example-date-input" class="col-lg-2 col-sm-4  col-form-label">À</label>
+                                            <div class="col-lg-10 col-sm-10">
                                               <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                                             </div>
                                           </div>
@@ -92,8 +92,8 @@
                                   <div class="row">
                                     <div class="col-md-8 themed-grid-col formborder">
                                         <div class="form-group row">
-                                            <label for="example-date-input" class="col-2 col-form-label">Où</label>
-                                            <div class="col-10">
+                                            <label for="example-date-input" class="col-lg-2 col-sm-4 col-form-label">Où</label>
+                                            <div class="col-lg-10 col-sm-10 ">
                                                 <input type="text" class="form-control mb-2 mr-sm-2"  placeholder="Ville" name="ville">
                                             </div>
                                           </div>
@@ -116,12 +116,19 @@
                           </div>
                       </form>
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
     </div>
 </div>
+   
+<div class="margintop100"></div>
+    
+
+
+
+
 <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+<button id="myBtn" onclick="modalMap('Sdudio','2','74510 paris rue Charle de Gaule','Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.', '14/41/10', '14/15/14')" >Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -183,10 +190,10 @@
         <div class="col-md-4 themed-grid-col">
           <div class="row">
             <div class="col-md-10 themed-grid-col mt-4"> 
-              <h6 class="mb-1 type"> Type : <span class="grey"> Sdudio</span></h6>
-              <h6 class="mb-1 type"> Nb de chambre :<span class="grey"> 1 </span></h6>
+              <h6 class="mb-1 type"> Type : <span class="grey" id="modalType"> </span></h6>
+              <h6 class="mb-1 type"> Nb de chambre :<span class="grey" id="modalNumber">  </span></h6>
               <br>
-              <h6 class="mb-4 type"> Adresse :<span class="grey"> 55 Rue Bidule 75102 Paris</span></h6>
+              <h6 class="mb-4 type"> Adresse :<span class="grey" id="modalAdresse"> </span></h6>
               
           </div>
             
@@ -194,16 +201,16 @@
         </div>
         <div class="col-md-4 themed-grid-col">
           <div class="row">
-            <div class="col-md-12 themed-grid-col mt-4">
+            <div class="col-md-12 themed-grid-col mt-4" >
               <h6 class="mb-4 type"> Description :</h6>
-              <p> 8e étage avec ascenceur, remis à neuf récemment, toutes commoditiés (machine à laver et sèche-linge)</p>
+              <p id="modalAbout"> </p>
             </div>
         </div>
       </div>
         <div class="col-md-4 themed-grid-col mt-4">
           <button type="submit" class="btn btn-warning text-white m-4 ">Envoyer une demande de logement</button>
           <br>
-            <h6 class="mb-4 type"> Du : <span class="grey"> 14/25/2018</span>&nbsp; Au : <span class="grey"> 14/01/2012</span></h6> 
+            <h6 class="mb-4 type"> Du : <span class="grey" id="modalDate1"> </span>&nbsp; Au : <span class="grey" id="modalDate2"> </span></h6> 
           </div>
       </div>
     </div>
@@ -212,6 +219,19 @@
   </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="container-fluid"> 
@@ -226,9 +246,6 @@
 
   </div>
   </div>
-
-
-  
 </div>
 
 
@@ -265,12 +282,17 @@
       
     
   </footer>
-  
-  
+
+
+
   <script src="https://kit.fontawesome.com/b9dea9cce1.js" crossorigin="anonymous"></script>
   <script src="../../assets/js/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
+
+
