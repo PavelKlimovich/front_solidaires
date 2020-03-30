@@ -7214,6 +7214,12 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 1.8;
   font-weight: 700; }
 
+.type2 {
+  color: #04148a;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500; }
+
 .grey {
   color: #6c757d;
   font-size: 18px;
