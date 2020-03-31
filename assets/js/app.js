@@ -24,56 +24,36 @@ function check() {
   
 
 //  // Get the modal
-//  var modal = document.getElementById("myModal1");
+var modal = document.querySelector("#myModal");
+var close = document.getElementById("close");
+ 
+close.onclick = function() {
+    modal.style.display = "none";
+    
+   
+}  
+ 
+window.onclick = function(event) {
+  if (event.target == modal) {
+     modal.style.display = "none";
+   }
+}
 
-//  // Get the button that opens the modal
-//  var btn = document.getElementById("myBtn1");
- 
-//  // Get the <span> element that closes the modal
-//  var span = document.getElementById("close1");
- 
-//  // When the user clicks on the button, open the modal
-//  btn.onclick = function() {
-//    modal.style.display = "block";
-//  }
- 
-//  // When the user clicks on <span> (x), close the modal
-//  span.onclick = function() {
-//    modal.style.display = "none";
-//  }
- 
-//  // When the user clicks anywhere outside of the modal, close it
-//  window.onclick = function(event) {
-//    if (event.target == modal) {
-//      modal.style.display = "none";
-//    }
-//  }
-
-
- var modal = document.querySelector("#myModal");
-  var close = document.querySelector("#close");
+function modalForm() {
   var modal = document.querySelector("#myModal");
-
-
-var modalName = document.querySelector("#modalName");
-var modalFirstname =document.querySelector("#modalFirstname");
-var modalAbout =document.querySelector("#modalAbout");
-var modalLink =document.querySelector("#modalLink");
-
+  
+  modal.style.display = "block";
+ 
+}
 
 function modalOpen(name,firstname,about,link) {
-  var modal = document.querySelector("#myModal");
-  var close = document.querySelector("#close");
-  var modal = document.querySelector("#myModal");
-
-
+var modal = document.querySelector("#myModal");
+var close = document.querySelector("#close");
+var modal = document.querySelector("#myModal");
 var modalName = document.querySelector("#modalName");
 var modalFirstname =document.querySelector("#modalFirstname");
 var modalAbout =document.querySelector("#modalAbout");
 var modalLink =document.querySelector("#modalLink");
-
-console.log(name);
-
 
 modal.style.display = "block";
 modalName.innerText =  name ;
@@ -83,22 +63,40 @@ modalLink.innerText =  link ;
 
 }
 
-close.onclick = function() {
-  var modal = document.querySelector("#myModal");
-  var close = document.querySelector("#close");
-  var modal = document.querySelector("#myModal");
+function modalMap(type,number,addresse,about,date1, date2) {
+var modal = document.querySelector("#myModal");
 
 
-var modalName = document.querySelector("#modalName");
-var modalFirstname =document.querySelector("#modalFirstname");
+var modalType = document.querySelector("#modalType");
+var modalNumber =document.querySelector("#modalNumber");
 var modalAbout =document.querySelector("#modalAbout");
-var modalLink =document.querySelector("#modalLink");
+var modalAdresse =document.querySelector("#modalAdresse");
+var modalDate1 =document.querySelector("#modalDate1");
+var modalDate2 =document.querySelector("#modalDate2");
 
-    modal.style.display = "none";
+
+modal.style.display = "block";
+modalType.innerText =  type ;
+modalNumber.innerText = number ;
+modalAdresse.innerText =  addresse ;
+modalDate2.innerText =  date2 ;
+modalDate1.innerText =  date1 ;
+modalAbout.innerText =  about ;
+
 }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-       modal.style.display = "none";
-     }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+ 
