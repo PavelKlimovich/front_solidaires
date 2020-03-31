@@ -7560,6 +7560,10 @@ h1, h2, h3, h4, h5,
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 800px; }
 
+#btn-hr-blue:hover {
+  background: #336cd2ab;
+  color: white; }
+
 .slider-text {
   position: relative; }
   .slider-text h1 {
@@ -7611,7 +7615,7 @@ h1, h2, h3, h4, h5,
   width: 800px;
   max-width: 450px;
   min-height: 550px;
-  height: 780px;
+  height: 800px;
   position: relative;
   border-radius: 25px;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
@@ -7657,6 +7661,13 @@ h1, h2, h3, h4, h5,
 .login-html .sign-up:checked + .tab {
   color: #343a40;
   border-color: #ffb400; }
+
+#link-cnx {
+  color: #ffb400 !important;
+  font-size: 16px; }
+
+#link-cnx:hover {
+  color: #4c442d !important; }
 
 .login-form {
   margin-top: 15px;
@@ -7895,7 +7906,7 @@ body::-webkit-scrollbar-button {
 
 #hero {
   margin-left: -150px;
-  margin-top: 200px; }
+  margin-top: 180px; }
 
 #rr {
   display: none; }
@@ -7951,6 +7962,16 @@ body::-webkit-scrollbar-button {
     font-weight: 700; } }
 
 @media (min-width: 300px) and (max-width: 649px) {
+  #aa {
+    font-size: 9px; }
+  #rr {
+    font-size: 9px; }
+  .login-html {
+    padding: 10px 30px 0px 30px; }
+  .login-wrap {
+    height: 700px; }
+  #link-cnx {
+    font-size: 12px; }
   .mdl-type1 {
     color: #04148a;
     font-size: 10px;
@@ -7965,7 +7986,13 @@ body::-webkit-scrollbar-button {
   .login-form .group .label {
     font-size: 10px; }
   .login-wrap {
-    width: 350px; }
+    width: auto; }
+  .hero-wrap {
+    height: 800px; }
+  .overlay {
+    height: 800px; }
+  .navbar-brand img {
+    width: 150px; }
   #hero {
     margin-left: 0px;
     margin-top: 25px; }
