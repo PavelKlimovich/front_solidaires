@@ -808,6 +808,12 @@ body::-webkit-scrollbar {
 
 	}
   }
+  .mdl-type1{
+    color: #04148a;
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 700;
+  }
   @media (min-width: 800px) and (max-width: 1024px) {
 
 
@@ -815,6 +821,13 @@ body::-webkit-scrollbar {
   }
 
   @media (min-width: 300px) and (max-width: 649px) {
+
+	.mdl-type1{
+		color: #04148a;
+		font-size: 10px;
+		line-height: 1.8;
+		font-weight: 700;
+	  }
 	  #aa{
 		font-size: 10px;
 	  }
