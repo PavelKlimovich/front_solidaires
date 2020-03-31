@@ -206,40 +206,30 @@
       <div class="modal-body">
         
         <form action="" method="POST">
-
-
-          
-          <div class="col-auto d-none d-lg-flex m-4 text-right">
-            <div class="imgCircle">
-              <img src="https://picsum.photos/200" width="250" alt="">
-              <a class="text-blue" href=""><i class="fas fa-plus-circle fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <div class="ml-4 align-self-center">
-              <a href=""><i class="fas fa-plus-circle fa-3x" aria-hidden="true"></i></a>
-            </div>
-            
-
-          </div>
-          <div class="row mb-3 padding1 m-3">
-            <div class="col-md-6 col-lg-4 col-sm-12 themed-grid-col">
-              <div class="row">
-                <div class="col-md-10 themed-grid-col mt-4">
-                  <div class="form-group row formborder">
-                    <label for="example-date-input" class="col-4 col-form-label mdl-type1">Adresse :</label>
-                    <div class="col-8">
-                      <input type="text" class="form-control " placeholder="75 rue National 94000 Paris" name="adresse">
-                    </div>
-                  </div>
+          <div class="row d-flex">
+            <div class="col-md-6 col-lg-10 pl-lg-5 ">
+              <div class="custom-file mt-3 mb-3">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Une image</label>
+              </div>
+              </div>
+            <div class="col-md-8 col-lg-4 pl-lg-5 ">
+            <div class="img d-flex align-self-stretch align-items-end  p-2">
+              <div class="form-group row formborder">
+                <label for="example-date-input" class="col-lg-4 col-sm-10 col-form-label type4">Adresse :</label>
+                <div class="col-lg-8 col-sm-10">
+                  <input type="text" class="form-control " placeholder="75 rue National 94000 Paris" name="adresse">
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12 themed-grid-col">
-              <div class="row">
-                <div class="col-md-12  themed-grid-col mt-4">
-
+            </div>
+            <div class="col-md-6 col-lg-4 pl-lg-5 ">
+            <div class="p-2">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
                   <div class="form-group row formborder">
-                    <label for="example-date-input" class="col-3 col-form-label mdl-type1">Type :</label>
-                    <div class="col-6">
+                    <label for="example-date-input" class="col-lg-4 col-sm-10 col-form-label type4">Type :</label>
+                    <div class="col-lg-8 col-sm-10">
                       <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                         <option value="studio">Studio</option>
                         <option value="appartement">Appartement</option>
@@ -249,8 +239,8 @@
                     </div>
                   </div>
                   <div class="form-group row formborder">
-                    <label for="example-date-input" class="col-4 col-form-label mdl-type1">Nb de chambre :</label>
-                    <div class="col-6">
+                    <label for="example-date-input" class="col-lg-6 col-sm-10 col-form-label type4">Nb de chambre :</label>
+                    <div class="col-lg-6 col-sm-10">
                       <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -265,23 +255,35 @@
                       </select>
                     </div>
                   </div>
-                </div>
+              </div>
               </div>
             </div>
-            <div class="col-md-12 col-lg-4 col-sm-12 themed-grid-col mt-4">
-              <div class="form-group row formborder">
-                <label for="example-date-input" class="col-4 col-form-label mdl-type1">Description :</label>
-                <div class="col-8">
-                  <textarea class="form-control" id="exampleTextarea" placeholder="Texte" rows="5"></textarea>
+            </div>
+            <div class="col-md-12 col-lg-4 pl-lg-5 ">
+              <div class="p-2">
+                <div class="row justify-content-start pb-3">
+                  <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+                    <div class="form-group row formborder">
+                      <label for="example-date-input" class="col-lg-4 col-sm-10 col-form-label type4">Description </label>
+                      <div class="col-lg-8 col-sm-10">
+                        <textarea class="form-control" id="exampleTextarea" placeholder="Texte" rows="5"></textarea>
+                      </div>
+                    </div>
                 </div>
               </div>
-            </div>
-
+              </div>
+          </div>
+          <div >
             <div class="col-12 text-center">
-              <input type="submit" class="btn btn-warning py-3 px-4" value="Enregistrer les modificationss">
+              <input type="submit" class="btn btn-warning py-3 px-4" value="Proposer le logement">
             </div>
+          </div>
+    </div>
+
+          
+          
         </form>
-      </div>
+      
     </div>
     <div class="modal-footer">
     </div>
