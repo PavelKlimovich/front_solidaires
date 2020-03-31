@@ -583,6 +583,56 @@ h1, h2, h3, h4, h5,
 
 
 
+ 
+
+  
+
+.block-7 {
+    margin-bottom: 30px;
+    
+    
+    background: #fff; }
+    .block-7 .heading {
+      font-size: 14px;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      display: inline-block;
+      text-transform: uppercase; }
+    .block-7 .heading-2 {
+      font-size: 16px; }
+    .block-7 .price {
+      margin: 0;
+      padding: 0;
+      display: block; }
+      .block-7 .price sup {
+        font-size: 20px;
+        top: -.7em;
+        color: #fcd307; }
+      .block-7 .price .number {
+        font-size: 40px;
+        font-weight: 500;
+        color: #fcd307; }
+    .block-7 .excerpt {
+      margin-bottom: 20px;
+      color: gray; }
+    .block-7 .label2 {
+      text-transform: uppercase; }
+    .block-7 .pricing-text {
+      margin-bottom: 0; }
+      .block-7 .pricing-text, .block-7 .pricing-text li {
+        padding: 0;
+        margin: 0; }
+      .block-7 .pricing-text li {
+        list-style: none;
+        
+        margin-bottom: 15px;
+        color: #fcd307; }
+        .block-7 .pricing-text li strong {
+          color: #000000; }
+  
+
 
 
 
@@ -710,7 +760,9 @@ h1, h2, h3, h4, h5,
 }
 
 
-
+#btn-hr-blue{
+	padding: 15px 125px;
+}
 
 
 
@@ -806,6 +858,8 @@ body::-webkit-scrollbar {
 		
 	}
   }
+
+  
   @media (min-width: 650px) and (max-width: 1100px) {
 	#hero{
 		margin-left: 0px ;
@@ -840,10 +894,12 @@ body::-webkit-scrollbar {
 		line-height: 1.8;
 		font-weight: 700;
 	  }
-
+	  #btn-hr-blue{
+		padding: 15px 120px !important;
+	}
 
   }
-
+  
   @media (min-width: 300px) and (max-width: 649px) {
 	  #aa{
 		  font-size: 9px;
@@ -860,7 +916,7 @@ body::-webkit-scrollbar {
 	}
 	#link-cnx {
 		
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.mdl-type1{
 		color: #04148a;
@@ -886,6 +942,9 @@ body::-webkit-scrollbar {
 		width: auto;
 		
 	
+	}
+	#btn-hr-blue{
+		padding: 15px 88px !important;
 	}
 	.hero-wrap{
 		height: 800px;
@@ -946,7 +1005,13 @@ body::-webkit-scrollbar {
 	}
   }
   
- 
+  @media (min-width: 300px) and (max-width: 400px) {
+	#btn-hr-blue{
+		padding: 15px 70px !important;
+	}
+
+  }
+
 
   @media (min-width: 1200px) and (max-width: 1500px) {
 	.type1 {
