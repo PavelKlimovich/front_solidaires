@@ -761,6 +761,9 @@ body::-webkit-scrollbar {
 	#hero{
 		margin-left: 0px ;
 	  }
+	  .dashboardLink{
+		margin-left: 0px;
+	}
   }
 
   @media (min-width: 200px) and (max-width: 991px) {
@@ -778,8 +781,8 @@ body::-webkit-scrollbar {
 	#hero{
 		margin-left: 0px ;
 	  }
-	.dashboardLink ul {
-		margin-left: -100px;
+	.dashboardLink  {
+		margin-left: 0px;
 		
 	}
 	.no-gutters {
@@ -834,23 +837,13 @@ body::-webkit-scrollbar {
 		padding: 0px;
 	  }
 	  
-	.dashboardLink ul {
+	.dashboardLink {
 		margin-left: 0px;
 		
 	}
-	.type {
-		font-size: 10px;
-
-	}
-	.grey {
-		
-		font-size: 10px;
-		
-	}
-	.type1 {
-		font-size: 10px;
-
-	}
+	
+	
+	
 	h4, .h4 {
 		font-size: 15px !important;
 	}
@@ -875,9 +868,7 @@ body::-webkit-scrollbar {
 	 
 }
 
-.dashboardLink{
-	margin-left: -150px;
-}
+
 
 .color-back{
 	background-color: #FEF8EC !important;
