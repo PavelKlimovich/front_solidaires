@@ -7906,11 +7906,18 @@ body::-webkit-scrollbar-button {
 .custom-file-input ~ .custom-file-label:lang(es)::after {
   content: "Elegir...`"; }
 
+#cnt-btn-in {
+  display: none; }
+
 @media (min-width: 1101px) and (max-width: 1199px) {
   #hero {
     margin-left: 0px; }
   .dashboardLink {
     margin-left: 0px; } }
+
+@media (min-width: 600px) and (max-width: 850px) {
+  .login-wrap {
+    width: 700px; } }
 
 @media (min-width: 200px) and (max-width: 991px) {
   .overlay1 {
@@ -7924,7 +7931,11 @@ body::-webkit-scrollbar-button {
   .dashboardLink {
     margin-left: 0px; }
   .no-gutters {
-    display: none; } }
+    display: none; }
+  #cnt-btn {
+    display: none; }
+  #cnt-btn-in {
+    display: block; } }
 
 @media (min-width: 300px) and (max-width: 649px) {
   #aa {
@@ -7956,6 +7967,10 @@ body::-webkit-scrollbar-button {
     padding: 0px; }
   .dashboardLink {
     margin-left: 0px; }
+  #cnt-btn {
+    display: none; }
+  #cnt-btn-in {
+    display: block; }
   h4, .h4 {
     font-size: 15px !important; }
   p {

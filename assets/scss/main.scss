@@ -757,6 +757,11 @@ body::-webkit-scrollbar {
 	content: "Elegir...`";
   }
 
+  #cnt-btn-in{
+	display: none;
+
+}
+
   @media (min-width: 1101px) and (max-width: 1199px) {
 	#hero{
 		margin-left: 0px ;
@@ -766,6 +771,11 @@ body::-webkit-scrollbar {
 	}
   }
 
+  @media (min-width: 600px) and (max-width: 850px) {
+.login-wrap{
+	width: 700px;
+}
+  }
   @media (min-width: 200px) and (max-width: 991px) {
 	.overlay1 {
 	 height: 350px !important;
@@ -788,7 +798,22 @@ body::-webkit-scrollbar {
 	.no-gutters {
 		display: none;
 	}
+
+	#cnt-btn{
+		display: none;
+
+	}
+	#cnt-btn-in{
+		display: block;
+
+	}
   }
+  @media (min-width: 800px) and (max-width: 1024px) {
+
+
+
+  }
+
   @media (min-width: 300px) and (max-width: 649px) {
 	  #aa{
 		font-size: 10px;
@@ -842,7 +867,14 @@ body::-webkit-scrollbar {
 		
 	}
 	
-	
+	#cnt-btn{
+		display: none;
+
+	}
+	#cnt-btn-in{
+		display: block;
+
+	}
 	
 	h4, .h4 {
 		font-size: 15px !important;
